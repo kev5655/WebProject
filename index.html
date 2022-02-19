@@ -9,7 +9,6 @@
     <!-- Styles einbinden -->
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/routeImage.css">
-    <link rel="stylesheet" href="./src/styles/iconStyle.css">
     <!-- Google Fonts Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Fontawsome Icons -->
@@ -24,19 +23,20 @@
 
     <!-- Startseite der Webseite -->
     <section id="part_1">
-        
+
         <!-- Startseite Background Bild-->
         <img id="homeImg" src="./rsc/img/homeImg.jpg" alt="Bild Home" width="1905" height=auto>
-        
+
         <!-- Navigationsbar -->
-        <nav id="navbar"> <!-- id for Animation -->
+        <nav id="navbar">
+            <!-- id for Animation -->
             <ul>
                 <a id="borderRadLeft" href="#part_1">Home</a> <!-- Abgerundete Kanten Links -->
                 <a href="#part_2">Wander Route</a>
 
                 <!-- Dorpdown Menu in der Navigationsbar -->
                 <div id="dropdown">
-                    <button id="btnDropdown" >Tage
+                    <button id="btnDropdown">Tage
                         <i class="fa fa-caret-down"></i> <!-- Icon Dreieck -->
                     </button>
                     <div id="dropdownContent">
@@ -46,9 +46,10 @@
                     </div>
                 </div>
 
-               <!-- <a href="#part_6">Leistung</a>
+                <!-- <a href="#part_6">Leistung</a>
                 <a href="#part_7">Unterkünfte</a>
-                <a id="borderRadRight" href="#part_8">Schwierigkeit</a> --> <!-- Abgerundete Kanten Rechts -->
+                <a id="borderRadRight" href="#part_8">Schwierigkeit</a> -->
+                <!-- Abgerundete Kanten Rechts -->
             </ul>
         </nav>
         <!-- Zentrierter Titel -->
@@ -124,22 +125,25 @@
                 </p>
                 <!-- Eingebundenes PDF-->
                 <p id="pdf_link">
-                    <a href="./rsc/pdf/WanderRoute.pdf"> Hier</a> findest du die gesammte Wanderroute als Plan 
+                    <a href="./rsc/pdf/WanderRoute.pdf"> Hier</a> findest du die gesammte Wanderroute als Plan
                 </p>.
 
             </div>
 
             <!-- -->
             <div id="googleMaps">
-                <iframe src=https://maps.google.de/maps?hl=de&q=Luftseilbahn+Kandersteg-Sunnbüel%20%20Innere+Dorfstrasse%20Kandersteg&t=&z=10&ie=utf8&iwloc=b&output=embed
-                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0" > 
-                    Von 
-                    <a href="https://www.checkpoll.de"  style="font-size:10px;" title="Checkpoll" target="_blank">
+                <iframe
+                    src=https://maps.google.de/maps?hl=de&q=Luftseilbahn+Kandersteg-Sunnbüel%20%20Innere+Dorfstrasse%20Kandersteg&t=&z=10&ie=utf8&iwloc=b&output=embed
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    Von
+                    <a href="https://www.checkpoll.de" style="font-size:10px;" title="Checkpoll" target="_blank">
                         Checkpoll
                     </a>
                 </iframe>
-                <p style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;"> von 
-                    <a href="http://www.kurierexpress24.de"  style="font-size:10px;" title="Kurier" target="_blank">
+                <p
+                    style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;">
+                    von
+                    <a href="http://www.kurierexpress24.de" style="font-size:10px;" title="Kurier" target="_blank">
                         Kurier
                     </a>
                 </p>
@@ -239,26 +243,26 @@
             <div class="pin" id="point9D2" onmouseover="showImageD2(8)"></div>
             <div class="pin" id="point10D2" onmouseover="showImageD2(9)"></div>
 
-            <img class="image" id="posOfImg1D2" onclick="zoomImageD2(0)" src="" data-src="./rsc/img/SecondDay/Image1.jpg" 
-                alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg2D2" onclick="zoomImageD2(1)" src="" data-src="./rsc/img/SecondDay/Image2.jpg" 
-                alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg3D2" onclick="zoomImageD2(2)" src="" data-src="./rsc/img/SecondDay/Image3.jpg" 
-                alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg4D2" onclick="zoomImageD2(3)" src="" data-src="./rsc/img/SecondDay/Image4.jpg" \
-                alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg5D2" onclick="zoomImageD2(4)" src="" data-src="./rsc/img/SecondDay/Image5.jpg" 
-                alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg6D2" onclick="zoomImageD2(5)" src="" data-src="./rsc/img/SecondDay/Image6.jpg" 
-                alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg7D2" onclick="zoomImageD2(6)" src="" data-src="./rsc/img/SecondDay/Image7.jpg" 
-            alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg8D2" onclick="zoomImageD2(7)" src="" data-src="./rsc/img/SecondDay/Image8.jpg" \
-                alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg1D2" onclick="zoomImageD2(0)" src=""
+                data-src="./rsc/img/SecondDay/Image1.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg2D2" onclick="zoomImageD2(1)" src=""
+                data-src="./rsc/img/SecondDay/Image2.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg3D2" onclick="zoomImageD2(2)" src=""
+                data-src="./rsc/img/SecondDay/Image3.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg4D2" onclick="zoomImageD2(3)" src=""
+                data-src="./rsc/img/SecondDay/Image4.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg5D2" onclick="zoomImageD2(4)" src=""
+                data-src="./rsc/img/SecondDay/Image5.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg6D2" onclick="zoomImageD2(5)" src=""
+                data-src="./rsc/img/SecondDay/Image6.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg7D2" onclick="zoomImageD2(6)" src=""
+                data-src="./rsc/img/SecondDay/Image7.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg8D2" onclick="zoomImageD2(7)" src=""
+                data-src="./rsc/img/SecondDay/Image8.jpg" alt="Bild auf der zwieten Route">
             <img class="image" id="posOfImg9D2" onclick="zoomImageD2(8)" src=""
                 data-src="./rsc/img/SecondDay/Image9.jpg" alt="Bild auf der zwieten Route">
-            <img class="image" id="posOfImg10D2" onclick="zoomImageD2(9)" src="" data-src="./rsc/img/SecondDay/Image10.jpg" 
-                alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg10D2" onclick="zoomImageD2(9)" src=""
+                data-src="./rsc/img/SecondDay/Image10.jpg" alt="Bild auf der zwieten Route">
 
         </div>
     </section>
