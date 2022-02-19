@@ -123,7 +123,7 @@ function showImageD1(numberOfElement){
 
 // Wird aufgerufen wen auf das Bild gecklickt wird
 function zoomImageD1(numberOfElement){
-    ImagesDay1[numberOfElement].style.width = "100%";
+    ImagesDay1[numberOfElement].style.width = "50%";
     ImagesDay1[numberOfElement].style.top = "50%";
     ImagesDay1[numberOfElement].style.left = "50%";
     ImagesDay1[numberOfElement].style.zIndex = 1001;

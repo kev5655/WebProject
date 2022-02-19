@@ -313,8 +313,10 @@ thead th, tbody td{
 }
 
 .pin {
-  height: 1vmin; /* Setzt die Höhe des Punktes */
-  width: 1vmin; /* Setzt die Breite des Punktes */
+  height: 1vmin;
+  width: 1vmin;
+  /*height: 1vmin; /* Setzt die Höhe des Punktes */
+  /*width: 1vmin; /* Setzt die Breite des Punktes */ 
   /* Blockiert den Punkt so das es nicht an 
   das Bild angefügt werden kann, und darüber gefügt wird */
   display: block;
@@ -428,6 +430,12 @@ thead th, tbody td{
   thead th, tbody td{
     font-size: 0.9em; /* Verändert die Schriftgröße */
     padding: 5px; /* Verändert die Tabellen-Abstände */
+  }
+
+  .pin{
+    height: 2vmin;
+    width: 2vmin;
+    border-width: 0.6vmin; /* Setzt ein Rahmen um das Element */
   }
 }
 
