@@ -1,0 +1,447 @@
+
+/* Importiern der Schriftart vom Projekt */
+@font-face{
+  font-family: ubuntu;
+    src: url(../../rsc/Fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-width: light;
+}
+
+/*-----------------------------------------------------
+-------------------------Global-------------------------
+-------------------------------------------------------*/
+
+body {
+    background-color: rgb(11, 36, 13); /* Hintergrundfarbe der Webseite */
+    margin: auto; /* Zentriert den Body in die Mitte */
+    padding: 0; /* Setzt alle Abstände auf 0 */
+    height: 100%;
+
+    /* Wen die Displaygröße unter 1920 px liegt gilt das Attribut 100 % 
+    wen die Displaygröße aber über 1920 px Größe ist, gilt das Attribut 1920. 
+    So wird verhindert, dass die Website vertikal verzehrt wird, 
+    es ergibt sich eine Maximal Größe von 1920 px.  */
+    width: min(100%,1920px); 
+}
+
+/* Setzt die Schriftart fest für alle Überschriften und Links und Paragraphen 
+ die Schriftart wird von Projekt zur Verfügung gestellt, 
+ so kann es nicht vorkommen, das die Schrift nicht vorhanden ist. */
+h1, h2, h3, h4, h5, h6, a, p{
+  font-family: ubuntu;
+}
+
+h1 {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  color: white;
+  font-size: 1.2em;
+  text-align: center; /* Zentriert alle Überschriften zweiter Ordnung */
+  margin: 0 22% 0 22%; /* Begrenzt die Line unter der Überschrift, recht und links  22 % weniger */
+  padding-bottom: 2%; /* Distanziert die Line von der Überschrift */
+  border-bottom: 1px solid white; /* Zeichnet die Line unterhalb der Überschrift */
+  
+}
+
+h3{
+  color: white;
+  font-size: 1em;
+  text-align: center; /* Zentriert alle Überschriften dritter Ordnung */
+}
+
+p, a{
+  color: white;
+}
+
+/*-----------------------------------------------------
+-------------------------Part_1-------------------------
+-------------------------------------------------------*/
+
+/* Background Bild */ 
+
+
+#part_1{
+  /* Mit Position Relativ kann gewährleistet werden, das sich 
+  alle darin befindenden Element nicht größer alls das Element werden */
+  position: relative;
+}
+
+#homeImg{
+  width: 100%; /* Setzt das Bild auf 100 % der Webseiten größe  */ 
+  /* Fügt dem Bild ein Spiegeleffekt hinzu */
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0)) , to(rgb(250, 250, 250)));
+}
+
+/* Navigationsbar */
+
+nav{
+  /* Navigationsbar ist fixiert, das heißt, sie befindet 
+  sich immer auf dem Display, wen sie nicht ausgeblendet wird */
+  position: fixed; 
+  z-index: 1002; /* Ist das vorderste Element */
+  top: 0%; /* Befindet sich am obersten Rand des Displays */
+  width: min(100%,1920px); /* Gleiche Größe wie der Body */
+  padding: 0;
+  margin: 0;
+  /* Lässt Navigationsbar fließend verschwinden */
+  transition: top 0.3s;
+}
+
+nav ul{
+  display: flex; /* Das Display: flex ordnet alles nacheinander an */
+  justify-content: center; /* Zentriert die Boxen in der Mitte */
+  align-items: center; /* Zentriert die Elemente in die Mitte */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul a{
+  background-color:rgba(70, 164, 218, 0.589);
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  text-align: center; /* Text wird in der Box zentriert */
+  padding: 15px;
+  text-decoration: none; /* Unterstriche der Links werden entfernt */
+}
+
+#borderRadLeft{
+  /* Rundet zwei Kanten der Navigationsbar links ab */
+  border-radius: 10px 0px 0px 10px;
+}
+#borderRadRight{
+  /* Rundet zwei Kanten der Navigationsbar rechts ab */
+  border-radius: 0px 10px 10px 0px;
+}
+#borderRadDown, #dropdownContent{
+  /* Rundet beim Dropdown-Menü in der Navigationsbar 
+  die beiden unteren Kanten ab */
+  border-radius: 0px 0px 10px 10px;
+}
+
+#btnDropdown{
+  background-color:rgba(70, 164, 218, 0.589);
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  text-align: center; /* Text wird in der Box zentriert */
+  padding: 15px;
+  text-decoration: none; /* Unterstriche der Links werden entfernt */
+  border: none;
+}
+
+/* Verändert die Backgroundfarbe, wen die Maus darüber kommt */
+nav ul a:hover, #btnDropdown:hover, #dropdownContent a:hover{
+  background-color: rgb(0, 60, 255);
+}
+
+#dropdownContent {
+  display: none; /* Blendet das Bild standartmäßig aus */
+  position: absolute; /* Setzt das Div über das Background-Bild  */
+  background-color:rgba(70, 164, 218, 0.589);
+  min-width: 160px; /* Setzt die Minimale größe des Elements */
+  z-index: 1; /* Setzt den Dropdownmenü über das Background Bild */
+}
+
+#dropdownContent a {
+  float: none; /* Blendet das Dropdownmenü standartmäßig aus */
+  color: rgb(255, 255, 255);
+  /* Setzt ein Abstand von 12 px oben und unten und ein 
+  Abstand von 16 px rechts und links */
+  padding: 12px 16px; 
+  text-decoration: none; /* Unterstriche der Links werden entfernt */
+  /* Blockiert das Dropdownmenü so das es nicht an 
+  das Navigationsbar angefügt werden kann */
+  display: block;
+  text-align: left; /* Schiebt den Text nach links */
+}
+
+/* Wen über das Dropdownmenü gefahren wird, wird es angezeigt  */
+#dropdown:hover #dropdownContent {
+  display: block; 
+}
+
+/* Überschrift */
+
+#center{
+  position: absolute; /* Setzt das Div über das Background-Bild  */
+  top: 45%; /* Setzt die Distanz von oben 45 % nach unten */
+  width: 100%;
+  text-align: center; /* Text wird in der Box zentriert */
+}
+
+/* Icons */
+
+#bottomRight {
+  position: absolute; /* Setzt das Div über das Background-Bild  */
+  bottom: 6%; /* Von unten 6 % nach oben */
+  right: 16px; /* Von rechts 16 px nach links */
+}
+
+.icon{
+  color: white;
+  font-size: 27px;
+  width: 35px;
+}
+/* Vergrössert und wechsel die Farbe wen darübergefahren wird */
+.icon:hover{
+  font-size: 28px;
+  color:#9b9b9b;
+}
+
+#mail{
+  transform: scale(1.2);
+  margin-top: 20px;
+}
+
+/* Vergrössert und wechsel die Farbe wen darübergefahren wird */
+#mail:hover{
+  transform: scale(1.25);
+  color:#9b9b9b;
+}
+
+#instagram{
+  color:white
+}
+
+/* Beschreibung links */
+
+#bottomLeft {
+  position: absolute; /* Setzt das Div über das Background-Bild  */
+  bottom: 5%; /* Von unten 5 % nach oben */
+  left: 16px; /* Von links 16 px nach rechts */
+}
+
+
+
+/*-----------------------------------------------------
+-------------------------Part_2-------------------------
+-------------------------------------------------------*/
+
+#part_2{
+    /* Mit Position Relativ kann gewährleistet werden, das sich 
+  alle darin befindenden Element nicht größer alls das Element werden */
+  position: relative;
+  padding: 5% 0 0 0;
+}
+
+.layout_part_2{
+  /* Setz ein Grid-Panel fest so kann man besser auf 
+  veränderende Display Größen reagieren. */
+  display: grid;
+  /* Erzeug zwei Spalten */
+  grid-template-columns: 1fr 1fr;
+  /* Setzt die Abstände nach oben 7 % nach rechts 4 % 
+  nach unten kein Abstand und nach links 4 % */
+  padding: 7% 4% 0% 4%; 
+}
+
+#description_part_2{
+  /* Setz den Abstand für oben und unten und zentriert die Tabelle, 
+  Paragraph und den Link zum PDF in die Mitte */
+  margin: auto 4% auto 4%;
+}
+
+table{
+  color:white;
+  font-family: ubuntu;
+  /* Zentriert die Tabelle in die Mitte und 
+  setzt ein Abstand nach unten */
+  margin: 0 auto 10% auto;
+}
+thead th{
+  font-size: 1.1em;
+  padding: 10px; /* Setzt den Abstand auf 10 px */
+}
+tbody td{
+  padding: 10px; /* Setzt den Abstand auf 10 px */
+}
+
+thead th, tbody td{
+  text-align: left; /* Schiebt den Text nach links */
+}
+
+
+.justify{
+  text-align: justify; /* Macht aus den Texten ein Block-Text */
+}
+
+#pdf_link{
+  /* Zentriert den Link zum PDF in die Mitte und 
+  setzt ein Abstand nach unten und oben von 10 % */
+  margin: 10% auto 10% auto;
+  text-align: center; /* Text wird in der Box zentriert */
+}
+
+#googleMaps iframe{
+  margin-left: 2%; /* Setzt links ein Abstand von 2 % */
+  width: 98%;
+  height: 100%; 
+}
+
+
+
+/*-----------------------------------------------------
+-------------------------Part_3-------------------------
+-------------------------------------------------------*/
+
+#part_3{
+    /* Mit Position Relativ kann gewährleistet werden, das sich 
+  alle darin befindenden Element nicht größer alls das Element werden */
+  position: relative;
+  /* Setzt den Abstand nach oben, ird auch verwendet für die richtige 
+  Positionierung beim anklicken der Links in der Navigationsbar */
+  padding-top: 5%;
+}
+
+.text_pos{
+  /* Setzt ein Abstand von 2 % nach oben 22 % nach link 
+  und rechts und nach unten 3 % */
+  margin: 2% 22% 3% 22%;
+}
+
+.routeImg {
+  width: 100%;
+}
+
+.pin {
+  height: 1vmin; /* Setzt die Höhe des Punktes */
+  width: 1vmin; /* Setzt die Breite des Punktes */
+  /* Blockiert den Punkt so das es nicht an 
+  das Bild angefügt werden kann, und darüber gefügt wird */
+  display: block;
+  border: 0.3vmin solid; /* Setzt ein Rahmen um das Element */
+  border-color: rgba(15, 127, 192, 0.781);
+  border-radius: 50%; /* Macht den Rahmen zu einem Kreis */
+  z-index: 999; /* Setzt die Position über das Bild */
+  position: absolute; /* Verhinder das Anfügen an dem Bild */
+  /* Verschiebt die Koordinate es Punktes, so das die Koordinate, 
+  an dem der Punkt definiert ist, auf die Mitte des Kreises */
+  transform: translate(-50%, -50%); 
+}
+
+.pin:hover {
+  border-color: rgb(70, 164, 218); /* Setzt die Farbe des Rahmens */
+  height: 1.5vh; /* Setzt die Höhe des Punktes */
+  width: 1.5vh; /* Setzt die Breite des Punktes */
+  border-width: 0.35vh; /* Setzt die Dicke des Rahmens */
+  z-index: 1000; /* Setzt die Position über einen andern Kreis */
+}
+
+.image{ /*Animation in JavaScript*/
+  position: absolute;
+  width:25%;
+  display: none; /* Blendet das Bild Standartmäßig aus */
+  /* Verschiebt die Koordinate es Bildes, so das die Koordinate, 
+  an dem das Bild definiert ist, auf die Mitte des Bildes */
+  transform: translate(-50%, -50%);
+}
+
+#routeMapD1 {
+  /* Mit Position Relativ kann gewährleistet werden, das sich 
+  alle darin befindenden Element nicht größer alls das Element werden */
+  position: relative;
+  padding: 0;
+  margin: 0;
+  
+}
+
+  /*-----------------------------------------------------
+  -------------------------Part_4-------------------------
+  -------------------------------------------------------*/
+  
+#part_4{
+  padding-top: 5%;
+}
+
+#routeMapD2 {
+  /* Mit Position Relativ kann gewährleistet werden, das sich 
+  alle darin befindenden Element nicht größer alls das Element werden */
+  position: relative;
+  padding: 0;
+  margin: 0;
+  
+}
+
+  /*-----------------------------------------------------
+-------------------------Part_5-------------------------
+-------------------------------------------------------*/
+
+#part_5{
+  padding-top: 5%;
+}
+
+#routeMapD3 {
+  /* Mit Position Relativ kann gewährleistet werden, das sich 
+  alle darin befindenden Element nicht größer alls das Element werden */
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 1068px) {			/* For Smartphone */
+  .layout_part_2{
+    grid-template-columns: 1fr; /* Veränder das Grid auf eine Spalte */
+  } 
+
+  .text_pos{
+    margin: 2% 2% 3% 2%; /* Lässt den Text bis an den Bildrand reichen */
+  }
+
+  #googleMaps{
+    height: 640px; /* Höhe der Google Maps Karte wird erhöht */
+  }
+}
+
+@media only screen and (max-width: 734px) {			/* For Smartphone */
+  /* Verändert die Schriftgröße */
+  h1{
+    font-size: 1em;
+  }
+  p{
+    font-size: 0.8em;
+  }
+  ul{
+    font-size: 0.6em;
+  }
+
+  /* Navigationsbar */
+  nav ul a, #btnDropdown{
+    padding: 10px; /* Verkleiner die Boxen der Navigationsbar */
+  }
+
+  table{
+    font-size: 0.8em; /* Verändert die Schriftgröße */
+  }
+
+  thead th, tbody td{
+    font-size: 0.9em; /* Verändert die Schriftgröße */
+    padding: 5px; /* Verändert die Tabellen-Abstände */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

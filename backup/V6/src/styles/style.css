@@ -1,0 +1,352 @@
+@font-face{
+  font-family: ubuntu;
+    src: url(../../rsc/Fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-width: light;
+}
+
+/*-----------------------------------------------------
+-------------------------Gobal-------------------------
+-------------------------------------------------------*/
+
+
+body {
+    background-color: rgb(11, 36, 13); /*Himmel Balu rgba(113,163,226,255)*/
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: min(100%,1920px);
+}
+h1, h2, h3, h4, h5, h6, a, p{
+  font-family: ubuntu;
+}
+
+h1 {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+}
+
+h2{
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  word-spacing: 0.3em;
+  margin: 0 22% 0 22%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid white;
+  
+}
+
+h3{
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+p, a{
+  color: white;
+}
+
+/*-----------------------------------------------------
+-------------------------Part_1-------------------------
+-------------------------------------------------------*/
+
+
+
+
+#part_1{
+  position: relative;
+}
+
+#homeImg{
+  width: 100%;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0)) , to(rgb(250, 250, 250)));
+}
+
+nav{
+  position: fixed;
+  z-index: 1002;
+  top: 0%;
+  width: min(100%,1920px);
+  padding: 0;
+  margin: 0;
+  transition: top 0.3s;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul a{
+  background-color:rgba(70, 164, 218, 0.589);
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#borderRadLeft{
+  border-radius: 10px 0px 0px 10px;
+}
+#borderRadRight{
+  border-radius: 0px 10px 10px 0px;
+}
+
+#borderRadDown, #dropdownContent{
+  border-radius: 0px 0px 10px 10px;
+}
+
+#btnDropdown{
+  background-color:rgba(70, 164, 218, 0.589);
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  border: none;
+  font-family: ubuntu;
+}
+
+nav ul a:hover, #btnDropdown:hover{
+  background-color: rgb(0, 60, 255);
+  color: white;
+}
+
+
+#dropdownContent {
+  display: none;
+  position: absolute;
+  background-color:rgba(70, 164, 218, 0.589);
+  min-width: 160px;
+  z-index: 1;
+}
+
+#dropdownContent a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+#dropdownContent a:hover {
+  background-color: rgb(0, 60, 255);
+}
+
+#dropdown:hover #dropdownContent {
+  display: block;
+}
+
+.center{
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: 6%;
+  right: 16px;
+  font-size: 1em;
+}
+
+
+
+.bottomLeft {
+  position: absolute;
+  bottom: 5%;
+  left: 16px;
+}
+
+
+
+/*-----------------------------------------------------
+-------------------------Part_2-------------------------
+-------------------------------------------------------*/
+
+
+#part_2{
+  position: relative;
+  margin: 5% 0 0 0;
+
+}
+.layout_part_2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  margin: 5% 2% 5% 2%;
+}
+
+#description_part_2{
+  margin: auto 4% auto 4%;
+}
+
+table{
+  color:white;
+  font-family: ubuntu;
+  margin: 0 auto 10% auto;
+  /*margin: 1% auto 1% auto;*/
+}
+thead th{
+  font-size: 1.1em;
+  padding: 10px;
+}
+tbody td{
+  padding: 10px;
+}
+
+thead th, tbody td{
+  /*text-align: center;*/
+  text-align: left;
+}
+
+
+.justify{
+  text-align: justify;
+}
+
+#pdf_link{
+  margin: 10% auto 10% auto;
+  text-align: center;
+}
+
+#googleMaps iframe{
+  margin-left: 2%;
+  width: 98%;
+  height: 600px;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------
+-------------------------Part_3-------------------------
+-------------------------------------------------------*/
+
+.text_pos{
+  margin: 2% 22% 3% 22%;
+}
+
+.routeImg {
+  width: 100%;
+}
+
+.pin {
+  height: 1vh;
+  width:  1vh;
+  display: block;
+  border: 0.3vh solid;
+  border-color: rgba(15, 127, 192, 0.781);
+  border-radius: 50%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.pin:hover {
+  border-color: rgb(70, 164, 218);
+  border-width: 0.35vh;
+  height: 1.5vh;;
+  width: 1.5vh;
+  z-index: 1000;
+}
+
+.image{ /*Animation in JavaScript*/
+  position: absolute;
+  width:25%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+
+#routeMapD1 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+  /*-----------------------------------------------------
+  -------------------------Part_4-------------------------
+  -------------------------------------------------------*/
+  
+#part_4{
+  margin-top: 5%;
+}
+
+#routeMapD2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+  /*-----------------------------------------------------
+-------------------------Part_5-------------------------
+-------------------------------------------------------*/
+
+#part_5{
+  margin-top: 5%;
+}
+
+#routeMapD3 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+
+@media only screen and (max-width: 1068px) {			/* For Smartphone */
+  .layout_part_2{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text_pos{
+    margin: 2% 2% 3% 2%;
+  }
+}
+
+@media only screen and (max-width: 734px) {			/* For Smartphone */
+  h1{
+    font-size: 1em;
+  }
+  p{
+    font-size: 0.8em;
+  }
+  ul{
+    font-size: 0.6em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderung Kandersteg – Lauenen</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/routeImage.css">
+    <link rel="stylesheet" href="./styles/iconStyle.css">
+    <!-- Google Fonts Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Bootstrap Icons -->
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- Einbinden von jQuery für die Bilder Animationen -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    
+
+    <section id="part_1">
+
+        <img id="homeImg" src="../rsc/img/homeImg.jpg" alt="Bild Home" width="1905" height=auto>
+        
+        <nav id="navbar">	<!-- id for Animation -->
+            <ul>
+                <a id="borderRadLeft" href="#part_1">Home</a>
+                <a href="#part_2">Wander Route</a>
+                <div id="dropdown">
+                    <button  id="btnDropdown">Tage
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id="dropdownContent">
+                        <a href="#part_3">Erster Tag</a>
+                        <a href="#part_4">Zweiter Tag</a>
+                        <a id="borderRadDown" href="#part_5">Dritter Tag</a>
+                    </div>
+                </div>
+                <a href="#part_6">Leistung</a>
+                <a href="#part_7">Unterkünfte</a>
+                <a id="borderRadRight" href="#part_8">Schwierigkeit</a>
+            </ul>
+        </nav>
+    
+        <div class="center">
+            <h1>Wanderung Kandersteg – Lauenen</h1>
+        </div>
+
+        <div class="bottomRight">
+            <a href="#"
+                data-name="kevin.zahn"
+                data-domain="hftm"
+                data-tld="com"
+                onclick="window.location.href = 'mailto:' + 
+                this.dataset.name + '@' + this.dataset.domain + 
+                '.' + this.dataset.tld + 
+                '?subject=Eine%20Frage%20an%20Kevin'; return false;">
+                <i class="material-icons icon"> alternate_email </i>
+            </a>
+        </div>
+
+        <div class="bottomLeft">
+            <p>Schweiz, Berner Oberland</p>
+        </div>
+    
+    </section>
+
+    </section>
+    <section id="part_2">
+        
+        <h2>Kandersteg nach Louenensee</h2>
+        <div id="layout">
+            <div id="part_2_text">
+                <p>
+                    Diese Wanderung ist das richtige für eine drei tätigen kurz Urlaub in die Berge. 
+                    Jedoch nicht zu empfehlen für Anfänger, die Schwierigkeit 
+                    beläuft sich auf durchschnittlich bis schwierig.
+                    Die Wanderung startet nach der fahrt mit der Gondel bahn in Kandersteg, 
+                    von da aus beginnt die erste Etappe auf die Engstligenalp. Die zweite 
+                    Etappe startet von der Egnstligenalp aus und findet sein ende in der Iffigenalp. 
+                    Die letzte Etappe führt dann noch zu dem Louenensee.
+        
+                </p>
+                <p><a href="../rsc/pdf/WanderRoute.pdf"> Hier </a> findest du die gesammte Wanderroute als Plan </a>.
+            </div>
+            <div id="table">
+                <table>
+                    <tr>
+                    <th>Start</th>
+                    <th>Ende</th>
+                    </tr>
+                    <tr>
+                    <td>Kandersteg</td>
+                    <td>Engstligenalp</td>
+                    </tr>
+                    <tr>
+                    <td>Engstligenalp</td>
+                    <td>Iffigenalp</td>
+                    </tr>
+                    <tr>
+                        <td>Iffigenalp</td>
+                        <td>Lauenensee</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </section>
+
+        
+    <section id="part_3">
+        <h2>Kandersteg - Engstligenalp</h2>
+        <h3>Beschreibung</h3>
+        <p>Die erste Etappe beginnt im Ort Kandersteg von dort aus benutzt 
+            man als erstes die Gondel bahn Richtung Sunbühl. Es besteht 
+            auch die Möglichkeit diese Gondelbahn auszulassen, und direkt bei 
+            der Talstation die Wanderung zu starten. Angekommen auf 1932 m ü. M 
+            bei der Station Sunbühl, beginnt die Wanderung, die ersten 3.5 km sind 
+            gemütliches wandern und meist auf einer Betonierten Strasse. Der erste 
+            aufstiege beginnt bei der Berghütte Schwarenbach und endet auf den Krete 
+            Schwarzgrätli. Darauf folgt ein kleiner abstieg in das Tal und wider ein 
+            aufstieg auf den tageshöhepunkt Tschingellochtighore auf über 2734 m ü. M. 
+            Danach gibt es noch den Abstieg auf die Engstligenalp zu bewältigen, wo die 
+            erste Übernachtung stattfindet.
+        </p>
+        <div id=routeMapD1 >
+
+            <img class="routeImg" src="../rsc/img/FristDay/Route.jpg" alt="Bild Route erster Tag">
+            <div class="pin" id="point1D1" onmouseover="showImageD1(0)"></div>
+            <div class="pin" id="point2D1" onmouseover="showImageD1(1)"></div>
+            <div class="pin" id="point3D1" onmouseover="showImageD1(2)"></div>
+            <div class="pin" id="point4D1" onmouseover="showImageD1(3)"></div>
+            <div class="pin" id="point5D1" onmouseover="showImageD1(4)"></div>
+            <div class="pin" id="point6D1" onmouseover="showImageD1(5)"></div>
+            <div class="pin" id="point7D1" onmouseover="showImageD1(6)"></div>
+            <div class="pin" id="point8D1" onmouseover="showImageD1(7)"></div>
+            <div class="pin" id="point9D1" onmouseover="showImageD1(8)"></div>
+            <div class="pin" id="point10D1" onmouseover="showImageD1(9)"></div>
+
+            <img class="image" id="posOfImg1D1" onclick="zoomImageD1(0)" src="../rsc/img/FristDay/Image1.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg2D1" onclick="zoomImageD1(1)" src="../rsc/img/FristDay/Image2.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg3D1" onclick="zoomImageD1(2)" src="../rsc/img/FristDay/Image3.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg4D1" onclick="zoomImageD1(3)" src="../rsc/img/FristDay/Image4.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg5D1" onclick="zoomImageD1(4)" src="../rsc/img/FristDay/Image5.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg6D1" onclick="zoomImageD1(5)" src="../rsc/img/FristDay/Image6.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg7D1" onclick="zoomImageD1(6)" src="../rsc/img/FristDay/Image7.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg8D1" onclick="zoomImageD1(7)" src="../rsc/img/FristDay/Image8.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg9D1" onclick="zoomImageD1(8)" src="../rsc/img/FristDay/Image9.jpg" alt="Bild auf der ersten Route">
+            <img class="image" id="posOfImg10D1" onclick="zoomImageD1(9)" src="../rsc/img/FristDay/Image10.jpg" alt="Bild auf der ersten Route">
+
+        </div>
+    </section>
+    
+    <section id="part_4">
+        <h2>Engstligenalp - Iffigenalp</h2>
+        <h3>Beschreibung</h3>
+        <p>
+            Der zweite Tag startet direkt auf einer höhe von 1949 m ü. M. 
+            in Richtung Ammertepass, dies ist der tägliche Höhepunkt 
+            Vom Ammertepass aus sieht man fast die gesamte Route, die an 
+            diesem Tag gewandert wird. Angekommen auf dem Ammertepass auf 2443 m ü. M. 
+            kommt der schwierigste teil der gesamten Wanderung über dir drei 
+            Tage gesehen. Denn innerhalb von 2km werden 800m abstieg bewältigt. 
+            Nach dem erfolgreichen abstieg kommt man an den berühmten 
+            Ort: „bi de sibe Brünnen“ vorbei. Bei den man die Wassermassen beobachten 
+            kann die direkt aus dem Felsen heraus fliesst. Darauf folg der aufstiege 
+            auf die Langermatte dies ist der letzte anstieg vom zweiten Tag. 
+            Der Aufstieg beträgt 400 m und ist nicht schwierig. Darauf folg der letzte 
+            abstieg zur Ifigenalp wo die Unterkunft für die Übernachtung liegt.
+        </p>
+        <div id=routeMapD2 >
+
+            <img class="routeImg" src="../rsc/img/SecondDay/Route.jpg" alt="Bild Route zweiter Tag">
+            <div class="pin" id="point1D2" onmouseover="showImageD2(0)"></div>
+            <div class="pin" id="point2D2" onmouseover="showImageD2(1)"></div>
+            <div class="pin" id="point3D2" onmouseover="showImageD2(2)"></div>
+            <div class="pin" id="point4D2" onmouseover="showImageD2(3)"></div>
+            <div class="pin" id="point5D2" onmouseover="showImageD2(4)"></div>
+            <div class="pin" id="point6D2" onmouseover="showImageD2(5)"></div>
+            <div class="pin" id="point7D2" onmouseover="showImageD2(6)"></div>
+            <div class="pin" id="point8D2" onmouseover="showImageD2(7)"></div>
+            <div class="pin" id="point9D2" onmouseover="showImageD2(8)"></div>
+            <div class="pin" id="point10D2" onmouseover="showImageD2(9)"></div>
+
+            <img class="image" id="posOfImg1D2" onclick="zoomImageD2(0)" src="../rsc/img/SecondDay/Image1.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg2D2" onclick="zoomImageD2(1)" src="../rsc/img/SecondDay/Image2.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg3D2" onclick="zoomImageD2(2)" src="../rsc/img/SecondDay/Image3.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg4D2" onclick="zoomImageD2(3)" src="../rsc/img/SecondDay/Image4.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg5D2" onclick="zoomImageD2(4)" src="../rsc/img/SecondDay/Image5.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg6D2" onclick="zoomImageD2(5)" src="../rsc/img/SecondDay/Image6.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg7D2" onclick="zoomImageD2(6)" src="../rsc/img/SecondDay/Image7.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg8D2" onclick="zoomImageD2(7)" src="../rsc/img/SecondDay/Image8.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg9D2" onclick="zoomImageD2(8)" src="../rsc/img/SecondDay/Image9.jpg" alt="Bild auf der zwieten Route">
+            <img class="image" id="posOfImg10D2" onclick="zoomImageD2(9)" src="../rsc/img/SecondDay/Image10.jpg" alt="Bild auf der zwieten Route">
+
+        </div>
+    </section>
+
+    <section id="part_5">
+        <h2>Iffigenalp - Lauenensee</h2>
+        <h3>Beschreibung</h3>
+        <p>
+            Die dritte und letzte Etappe führ von der Iffigenalp nach Lauenen 
+            an den See. Das highlight dieser Etappe liegt am Iffigsee, der 
+            Iffigsee wird nach dem ersten aufstiege erreicht und bietet optimale Platze 
+            für eine kleinen Rast, bevor man den nächsten Anstieg in Angriff nimmt. 
+            Nach dem Iffigsee kommen der letzte auf steig der gesamten Wanderung, 
+            auf den Tugelpass, genießen sie noch die Aussicht den das ist der 
+            letzte Höhepunkt der Wanderung. Danach folg ein Abstieg bis zum Lauenensee
+        </p>
+        <div id=routeMapD3 >
+
+            <img class="routeImg" src="../rsc/img/ThirdDay/Route.jpg" alt="Bild Route zweiter Tag">
+            <div class="pin" id="point1D3" onmouseover="showImageD3(0)"></div>
+            <div class="pin" id="point2D3" onmouseover="showImageD3(1)"></div>
+            <div class="pin" id="point3D3" onmouseover="showImageD3(2)"></div>
+            <div class="pin" id="point4D3" onmouseover="showImageD3(3)"></div>
+            <div class="pin" id="point5D3" onmouseover="showImageD3(4)"></div>
+            <div class="pin" id="point6D3" onmouseover="showImageD3(5)"></div>
+            <div class="pin" id="point7D3" onmouseover="showImageD3(6)"></div>
+            <div class="pin" id="point8D3" onmouseover="showImageD3(7)"></div>
+            <div class="pin" id="point9D3" onmouseover="showImageD3(8)"></div>
+            <div class="pin" id="point10D3" onmouseover="showImageD3(9)"></div>
+
+            <img class="image" id="posOfImg1D3" onclick="zoomImageD3(0)" src="../rsc/img/ThirdDay/Image1.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg2D3" onclick="zoomImageD3(1)" src="../rsc/img/ThirdDay/Image2.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg3D3" onclick="zoomImageD3(2)" src="../rsc/img/ThirdDay/Image3.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg4D3" onclick="zoomImageD3(3)" src="../rsc/img/ThirdDay/Image4.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg5D3" onclick="zoomImageD3(4)" src="../rsc/img/ThirdDay/Image5.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg6D3" onclick="zoomImageD3(5)" src="../rsc/img/ThirdDay/Image6.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg7D3" onclick="zoomImageD3(6)" src="../rsc/img/ThirdDay/Image7.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg8D3" onclick="zoomImageD3(7)" src="../rsc/img/ThirdDay/Image8.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg9D3" onclick="zoomImageD3(8)" src="../rsc/img/ThirdDay/Image9.jpg" alt="Bild auf der dritten Route">
+            <img class="image" id="posOfImg10D3" onclick="zoomImageD3(9)" src="../rsc/img/ThirdDay/Image10.jpg" alt="Bild auf der dritten Route">
+
+        </div>
+    </section>
+
+    <video 
+        controls
+        autobuffer
+        poster="../rsc/vid/standBild.png">
+        <source src="../rsc/vid/MountainEdit.mp4" type="video/mp4">
+      </video>
+    
+    
+    <script src="main.js"></script>
+      
+      
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+
+
+
+Problem: 
+- Animation von bilder Schliesse hat nicht funktioniert das das event von JavaScript
+aus kommen sollt und mit eine KeyFrame nicht möglich wahren
+Deshalb wirde JQuery wervenen und beide Animation zu erstellen
+bild anzeigen und bild schliessen e
+
+Bild vergrössern
+wen das bild wider geschlossen wird wirden die Position des geschlossens bild verändert
+das heisst es müssen wider die standart werte gesetzt werdne das macht das Array
+defautlValuesOfImg, das darf aber erst passieren wen die Bild animation abgeschossen wurde
+der grund dafür ist wen das bild nicht vergrösert wird 

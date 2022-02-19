@@ -1,0 +1,15 @@
+
+.icon{
+    transform: scale(1.2);
+    color: white;
+}
+
+.icon:hover{
+    color:#9b9b9b;
+    transform: scale(1.25);
+}
+
+
+
+
+

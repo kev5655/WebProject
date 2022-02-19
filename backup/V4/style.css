@@ -1,0 +1,569 @@
+@font-face{
+  font-family: ubuntu;
+    src: url(../rsc/Fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-width: light;
+}
+
+/*-----------------------------------------------------
+-------------------------Gobal-------------------------
+-------------------------------------------------------*/
+
+:root{
+  /*Variablen Part_1*/
+  --height-nav-bar: 75px;
+}
+
+body {
+    background-color: black; /*Himmel Balu rgba(113,163,226,255)*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+  color: white;
+  background-color: rgba(255, 235, 205, 0.5);
+  font-family: ubuntu;
+  font-size: 24px;
+  text-align: center;
+}
+
+h3{
+  color: white;
+  background-color: rgba(255, 235, 205, 0.5);
+  font-family: ubuntu;
+  font-size: 18px;
+  text-align: center;
+}
+
+p, a{
+  font-family: ubuntu;
+  color: white;
+}
+
+/*-----------------------------------------------------
+-------------------------Part_1-------------------------
+-------------------------------------------------------*/
+
+
+#part_1{
+  position: relative;
+}
+
+#homeImg{
+  width: 100%;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0)) , to(rgb(250, 250, 250)));
+}
+
+nav{
+  background-color: rgba(117, 37, 37, 0.5);
+  position: fixed;
+  z-index: 1001;
+  top: 0%;
+  width: 100%;
+  /*height: var(--height-nav-bar);*/
+  padding: 0;
+  margin: 0;
+  transition: top 0.3s;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  
+}
+
+nav ul a{
+  background-color:rgb(70, 164, 218);
+  float: left;
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav ul a:hover{
+  background-color: red;
+  color: white;
+}
+
+.link{
+  color: white;
+  font-size: 1em;
+}
+
+.center{
+  background-color: rgba(55,55,55,0.5);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.bottomRight {
+  background-color: rgba(55, 55, 55, 0.924);
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.bottomLeft {
+  background-color: rgba(55, 55, 55, 0.924);
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+#titelText{
+  background-color:aliceblue;
+  font-family: ubuntu;
+  font-size: 40px;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+}
+
+/*-----------------------------------------------------
+-------------------------Part_2-------------------------
+-------------------------------------------------------*/
+
+
+#part_2{
+  position: relative;
+  
+  background-color: lightcoral;
+  margin: 20% 0 0 0;
+}
+#layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#part_2_text{
+  
+  background-color: lightblue;
+  /*width: 50%;
+  height: 100%;*/
+}
+
+
+
+#table{
+  background-color: lightgreen;
+  /*width: 50%;
+  height: 100%;*/
+}
+
+/*-----------------------------------------------------
+-------------------------Part_3-------------------------
+-------------------------------------------------------*/
+
+
+.routeImg {
+  width: 100%;
+}
+
+.pin {
+  height: 1vh;
+  width:  1vh;
+  display: block;
+  border: 0.3vh solid;
+  border-color: rgba(15, 127, 192, 0.603);
+  border-radius: 50%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.pin:hover {
+  border-color: rgb(70, 164, 218);
+  border-width: 0.35vh;
+  height: 1.5vh;;
+  width: 1.5vh;
+  z-index: 1000;
+}
+
+.image{ /*Animation in JavaScript*/
+  position: absolute;
+  width:25%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+
+#routeMapD1 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#point1D1 {
+  top: 39%;
+  left: 85.8%;
+}
+
+#point2D1 {
+  top: 72.5%;
+  left: 80%;
+}
+
+#point3D1 {
+  top: 89%;
+  left: 72.5%;
+}
+
+#point4D1 {
+  top: 89.5%;
+  left: 67%;
+}
+
+#point5D1 {
+  top: 75.7%;
+  left: 54.5%;
+}
+
+#point6D1 {
+  top: 56%;
+  left: 38.3%;
+}
+
+#point7D1 {
+  top: 58%;
+  left: 38.9%;
+}
+
+#point8D1 {
+  top: 51%;
+  left: 34.5%;
+}
+
+#point9D1 {
+  top: 38%;
+  left: 16.5%;
+}
+
+#point10D1 {
+  top: 42%;
+  left: 8.3%;
+}
+
+/*-----------------------Image-----------------------*/
+
+
+#posOfImg1D1 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg2D1 {
+  top: 45%;
+  left: 70%;
+}
+
+#posOfImg3D1 {
+  top: 52%;
+  left: 65%;
+}
+
+#posOfImg4D1 {
+  top: 50%;
+  left: 62%;
+}
+
+#posOfImg5D1 {
+  top: 46%;
+  left: 55%;
+}
+
+#posOfImg6D1 {
+  top: 22%;
+  left: 38%;
+}
+
+#posOfImg7D1 {
+  top: 25%;
+  left: 42%;
+}
+
+#posOfImg8D1 {
+  top: 22%;
+  left: 36%;
+
+}
+
+#posOfImg9D1 {
+  top: 20%;
+  left: 33%;
+}
+
+#posOfImg10D1 {
+  top: 75%;
+  left: 20%;
+}
+
+
+/*-----------------------------------------------------
+-------------------------Part_4-------------------------
+-------------------------------------------------------*/
+
+#routeMapD2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/*-----------------------Point-----------------------*/
+
+#point1D2 {
+  top: 18%;
+  left: 80.65%;
+}
+
+#point2D2 {
+  top: 34%;
+  left: 66.3%;
+}
+
+#point3D2 {
+  top: 37%;
+  left: 65.3%;
+}
+
+#point4D2 {
+  top: 41%;
+  left: 67%;
+}
+
+#point5D2 {
+  top: 47.5%;
+  left: 62.2%;
+}
+
+#point6D2 {
+  top: 45.5%;
+  left: 58.2%;
+}
+
+#point7D2 {
+  top: 67.2%;
+  left: 41.3%;
+}
+
+#point8D2 {
+  top: 67.2%;
+  left: 34%;
+}
+
+#point9D2 {
+  top: 69%;
+  left: 28.5%;
+}
+
+#point10D2 {
+  top: 76%;
+  left: 20%;
+}
+
+/*-----------------------Image-----------------------*/
+
+#posOfImg1D2 {
+  top: 58%;
+  left: 85%;
+}
+
+#posOfImg2D2 {
+  top: 63%;
+  left: 83%;
+}
+
+#posOfImg3D2 {
+  top: 67%;
+  left: 78%;
+}
+
+#posOfImg4D2 {
+  top: 69%;
+  left: 75%;
+}
+
+#posOfImg5D2 {
+  top: 69%;
+  left: 75%;
+}
+
+#posOfImg6D2 {
+  top: 72%;
+  left: 63%;
+}
+
+#posOfImg7D2 {
+  top: 37%;
+  left: 28%;
+}
+
+#posOfImg8D2 {
+  top: 40%;
+  left: 25%;
+}
+
+#posOfImg9D2 {
+  top: 44%;
+  left: 20%;
+}
+
+#posOfImg10D2 {
+  top: 48%;
+  left: 15%;
+}
+
+
+/*-----------------------------------------------------
+-------------------------Part_5-------------------------
+-------------------------------------------------------*/
+
+
+#routeMapD3 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/*-----------------------Point-----------------------*/
+
+#point1D3 {
+  top: 55%;
+  left: 84.6%;
+}
+
+#point2D3 {
+  top: 77.2%;
+  left: 70%;
+}
+
+#point3D3 {
+  top: 71.2%;
+  left: 52.5%;
+}
+
+#point4D3 {
+  top: 72.5%;
+  left: 46%;
+}
+
+#point5D3 {
+  top: 69%;
+  left: 41%;
+}
+
+#point6D3 {
+  top: 60%;
+  left: 38%;
+}
+
+#point7D3 {
+  top: 54.5%;
+  left: 33.5%;
+}
+
+#point8D3 {
+  top: 59.2%;
+  left: 28%;
+}
+
+#point9D3 {
+  top: 70%;
+  left: 20%;
+}
+
+#point10D3 {
+  top: 72.5%;
+  left: 13%;
+}
+
+/*-----------------------Image-----------------------*/
+
+#posOfImg1D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg2D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg3D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg4D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg5D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg6D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg7D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg8D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg9D3 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg10D3 {
+  top: 20%;
+  left: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

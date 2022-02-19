@@ -1,0 +1,32 @@
+
+.icon{
+    color: white;
+    font-size: 27px;
+    width: 35px;
+}
+
+
+
+.icon:hover{
+    font-size: 28px;
+    color:#9b9b9b;
+    
+}
+
+#mail{
+    transform: scale(1.2);
+    margin-top: 20px;
+}
+#mail:hover{
+    color:#9b9b9b;
+    transform: scale(1.25);
+}
+
+#instagram{
+    color:white
+}
+
+
+
+
+

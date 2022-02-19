@@ -1,0 +1,313 @@
+@font-face{
+  font-family: ubuntu;
+    src: url(../rsc/Fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-width: light;
+}
+
+/*-----------------------------------------------------
+-------------------------Gobal-------------------------
+-------------------------------------------------------*/
+
+:root{
+  /*Variablen Part_1*/
+  --height-nav-bar: 100px;
+}
+
+body {
+    background-color: black; /*Himmel Balu rgba(113,163,226,255)*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+  color: white;
+  background-color: rgba(255, 235, 205, 0.5);
+  font-family: ubuntu;
+  font-size: 24px;
+  text-align: center;
+}
+
+p, a{
+  font-family: ubuntu;
+}
+
+/*-----------------------------------------------------
+-------------------------Part_1-------------------------
+-------------------------------------------------------*/
+
+
+#part_1{
+  position: relative;
+}
+
+#homeImg{
+  width: 100%;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0)) , to(rgb(250, 250, 250)));
+}
+
+.centerTop{
+  background-color: rgba(117, 37, 37, 0.5);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: var(--height-nav-bar);
+}
+
+#navigation{
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul {
+  margin: calc(var(--height-nav-bar) / 4) 0;
+}
+
+
+li a{
+  padding: 0px 0.8em;
+  text-decoration: none;
+  
+}
+
+.link{
+  color: white;
+  font-size: 1em;
+}
+
+.center{
+  background-color: rgba(55,55,55,0.5);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.bottomRight {
+  background-color: rgba(55, 55, 55, 0.924);
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.bottomLeft {
+  background-color: rgba(55, 55, 55, 0.924);
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+#titelText{
+  background-color:aliceblue;
+  font-family: ubuntu;
+  font-size: 40px;
+}
+
+.text{
+  color: white;
+  font-size: 30px;
+}
+
+/*-----------------------------------------------------
+-------------------------Part_2-------------------------
+-------------------------------------------------------*/
+
+
+#part_2{
+  position: relative;
+  background-color: lightcoral;
+  margin: 20% 0 0 0;
+}
+
+
+/*-----------------------------------------------------
+-------------------------Part_3-------------------------
+-------------------------------------------------------*/
+
+
+#part_3{
+  
+}
+
+.routeImg {
+  width: 100%;
+}
+
+#routeMapDay1 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.pin {
+  height: 1vh;
+  width:  1vh;
+  display: block;
+  border: 0.3vh solid;
+  border-color: rgb(15, 127, 192);
+  border-radius: 50%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.pin:hover {
+  border-color: rgb(70, 164, 218);
+  border-width: 0.35vh;
+  height: 1.5vh;;
+  width: 1.5vh;
+  z-index: 1000;
+}
+
+#point1D1 {
+  top: 39%;
+  left: 85.8%;
+}
+
+#point2D1 {
+  top: 72.5%;
+  left: 80%;
+}
+
+#point3D1 {
+  top: 89%;
+  left: 72.5%;
+}
+
+#point4D1 {
+  top: 89.5%;
+  left: 67.2%;
+}
+
+#point5D1 {
+  top: 75.5%;
+  left: 54.5%;
+}
+
+#point6D1 {
+  top: 55%;
+  left: 38.7%;
+}
+
+#point7D1 {
+  top: 57.5%;
+  left: 38.7%;
+}
+
+#point8D1 {
+  top: 51%;
+  left: 34.5%;
+}
+
+#point9D1 {
+  top: 38%;
+  left: 16.5%;
+}
+
+#point10D1 {
+  top: 42%;
+  left: 8.3%;
+}
+
+.image{ /*Animation in JavaScript*/
+  position: absolute;
+  width:25%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+
+#posOfImg1D1 {
+  top: 20%;
+  left: 70%;
+}
+
+#posOfImg2D1 {
+  top: 45%;
+  left: 70%;
+}
+
+#posOfImg3D1 {
+  top: 52%;
+  left: 65%;
+}
+
+#posOfImg4D1 {
+  top: 50%;
+  left: 62%;
+}
+
+#posOfImg5D1 {
+  top: 46%;
+  left: 55%;
+}
+
+#posOfImg6D1 {
+  top: 22%;
+  left: 38%;
+}
+
+#posOfImg7D1 {
+  top: 25%;
+  left: 42%;
+}
+
+#posOfImg8D1 {
+  top: 22%;
+  left: 36%;
+
+}
+
+#posOfImg9D1 {
+  top: 20%;
+  left: 33%;
+}
+
+#posOfImg10D1 {
+  top: 75%;
+  left: 20%;
+}
+
+
+/*-----------------------------------------------------
+-------------------------Part_4-------------------------
+-------------------------------------------------------*/
+
+
+#part_4{
+  position: relative;
+}
+
+
+
+/*@keyframes spin2 { 100% { transform:rotate(-360deg); } }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

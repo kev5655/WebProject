@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlebnis Wanderung</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <section id="part_1">
+
+        <img id="homeImg" src="../rsc/img/IMG_1249Edit.jpg" alt="Trulli" width="1905" height=auto>
+        
+        <nav class="centerTop">	
+            <ul id="navigation">
+                <li><a  class="link">Startseite</a></li>
+                <li><a href="#part_2" class="link">Wander Route</a></li>
+                <li><a href="#part_3" class="link">Technische Daten</a></li>
+                <li><a href="#part_4" class="link">Unterkünfte</a></li>
+                <li><a href="#part_5" class="link">Schwierigkeit</a></li>
+            </ul>
+        </nav>
+
+        <div class="center">
+            <h1 id="titelText">Erlebnis Wanderung</h1>
+        </div>
+
+        <div class="bottomRight">
+            <p class="text">Wanderung</p>
+        </div>
+
+        <div class="bottomLeft">
+            <p class="text">Wanderung</p>
+        </div>
+    
+    </section>
+
+    </section>
+    <section id="part_2">
+        
+        <h2>Beschreibung der Wanderung gesammt Übersicht</h2>
+        <p>
+            Hier kommt die Beschreibung der Gesammten Wanderung
+        </p>
+    </section>
+
+        
+    <section id="part_3">
+        <h2>Erster Tag</h2>
+        <div id=routeMapDay1 >
+
+            <img class="routeImg" src="../rsc/img/FristDay/Route.png">
+            <div class="pin" id="point1D1" onmouseover="showImageDay1(0)"></div>
+            <div class="pin" id="point2D1" onmouseover="showImageDay1(1)"></div>
+            <div class="pin" id="point3D1" onmouseover="showImageDay1(2)"></div>
+            <div class="pin" id="point4D1" onmouseover="showImageDay1(3)"></div>
+            <div class="pin" id="point5D1" onmouseover="showImageDay1(4)"></div>
+            <div class="pin" id="point6D1" onmouseover="showImageDay1(5)"></div>
+            <div class="pin" id="point7D1" onmouseover="showImageDay1(6)"></div>
+            <div class="pin" id="point8D1" onmouseover="showImageDay1(7)"></div>
+            <div class="pin" id="point9D1" onmouseover="showImageDay1(8)"></div>
+            <div class="pin" id="point10D1" onmouseover="showImageDay1(9)"></div>
+
+            <img class="image" id="posOfImg1D1" onclick="zoomImageDay1(0)" src="../rsc/img/FristDay/Image1.jpg">
+            <img class="image" id="posOfImg2D1" onclick="zoomImageDay1(1)" src="../rsc/img/FristDay/Image2.jpg">
+            <img class="image" id="posOfImg3D1" onclick="zoomImageDay1(2)" src="../rsc/img/FristDay/Image3.jpg">
+            <img class="image" id="posOfImg4D1" onclick="zoomImageDay1(3)" src="../rsc/img/FristDay/Image4.jpg">
+            <img class="image" id="posOfImg5D1" onclick="zoomImageDay1(4)" src="../rsc/img/FristDay/Image5.jpg">
+            <img class="image" id="posOfImg6D1" onclick="zoomImageDay1(5)" src="../rsc/img/FristDay/Image6.jpg">
+            <img class="image" id="posOfImg7D1" onclick="zoomImageDay1(6)" src="../rsc/img/FristDay/Image7.jpg">
+            <img class="image" id="posOfImg8D1" onclick="zoomImageDay1(7)" src="../rsc/img/FristDay/Image8.jpg">
+            <img class="image" id="posOfImg9D1" onclick="zoomImageDay1(8)" src="../rsc/img/FristDay/Image9.jpg">
+            <img class="image" id="posOfImg10D1" onclick="zoomImageDay1(9)" src="../rsc/img/FristDay/Image10.jpg">
+
+        </div>
+    </section>
+    <!--
+    <section id="part_4">
+        <h2>Zweiter Tag</h2>
+        <div id=routeMap >
+
+            <img class="routeImg" src="../rsc/img/FristDay/Route.png">
+            <div class="pin" id="point1" onmouseover="showImage(0)"></div>
+            <div class="pin" id="point2" onmouseover="showImage(1)"></div>
+            <div class="pin" id="point3" onmouseover="showImage(2)"></div>
+            <div class="pin" id="point4" onmouseover="showImage(3)"></div>
+            <div class="pin" id="point5" onmouseover="showImage(4)"></div>
+            <div class="pin" id="point6" onmouseover="showImage(5)"></div>
+            <div class="pin" id="point7" onmouseover="showImage(6)"></div>
+            <div class="pin" id="point8" onmouseover="showImage(7)"></div>
+            <div class="pin" id="point9" onmouseover="showImage(8)"></div>
+            <div class="pin" id="point10" onmouseover="showImage(9)"></div>
+
+            <img class="image" id="posOfImg1" onclick="zoomImage(0)" src="../rsc/img/FristDay/Image1.jpg">
+            <img class="image" id="posOfImg2" onclick="zoomImage(1)" src="../rsc/img/FristDay/Image2.jpg">
+            <img class="image" id="posOfImg3" onclick="zoomImage(2)" src="../rsc/img/FristDay/Image3.jpg">
+            <img class="image" id="posOfImg4" onclick="zoomImage(3)" src="../rsc/img/FristDay/Image4.jpg">
+            <img class="image" id="posOfImg5" onclick="zoomImage(4)" src="../rsc/img/FristDay/Image5.jpg">
+            <img class="image" id="posOfImg6" onclick="zoomImage(5)" src="../rsc/img/FristDay/Image6.jpg">
+            <img class="image" id="posOfImg7" onclick="zoomImage(6)" src="../rsc/img/FristDay/Image7.jpg">
+            <img class="image" id="posOfImg8" onclick="zoomImage(7)" src="../rsc/img/FristDay/Image8.jpg">
+            <img class="image" id="posOfImg9" onclick="zoomImage(8)" src="../rsc/img/FristDay/Image9.jpg">
+            <img class="image" id="posOfImg10" onclick="zoomImage(9)" src="../rsc/img/FristDay/Image10.jpg">
+
+        </div>
+    </section>
+
+    <section id="part_4">
+        <h2>Dritter Tag</h2>
+        <div id=routeMap >
+
+            <img class="routeImg" src="../rsc/img/FristDay/Route.png">
+            <div class="pin" id="point1" onmouseover="showImage(0)"></div>
+            <div class="pin" id="point2" onmouseover="showImage(1)"></div>
+            <div class="pin" id="point3" onmouseover="showImage(2)"></div>
+            <div class="pin" id="point4" onmouseover="showImage(3)"></div>
+            <div class="pin" id="point5" onmouseover="showImage(4)"></div>
+            <div class="pin" id="point6" onmouseover="showImage(5)"></div>
+            <div class="pin" id="point7" onmouseover="showImage(6)"></div>
+            <div class="pin" id="point8" onmouseover="showImage(7)"></div>
+            <div class="pin" id="point9" onmouseover="showImage(8)"></div>
+            <div class="pin" id="point10" onmouseover="showImage(9)"></div>
+
+            <img class="image" id="posOfImg1" onclick="zoomImage(0)" src="../rsc/img/FristDay/Image1.jpg">
+            <img class="image" id="posOfImg2" onclick="zoomImage(1)" src="../rsc/img/FristDay/Image2.jpg">
+            <img class="image" id="posOfImg3" onclick="zoomImage(2)" src="../rsc/img/FristDay/Image3.jpg">
+            <img class="image" id="posOfImg4" onclick="zoomImage(3)" src="../rsc/img/FristDay/Image4.jpg">
+            <img class="image" id="posOfImg5" onclick="zoomImage(4)" src="../rsc/img/FristDay/Image5.jpg">
+            <img class="image" id="posOfImg6" onclick="zoomImage(5)" src="../rsc/img/FristDay/Image6.jpg">
+            <img class="image" id="posOfImg7" onclick="zoomImage(6)" src="../rsc/img/FristDay/Image7.jpg">
+            <img class="image" id="posOfImg8" onclick="zoomImage(7)" src="../rsc/img/FristDay/Image8.jpg">
+            <img class="image" id="posOfImg9" onclick="zoomImage(8)" src="../rsc/img/FristDay/Image9.jpg">
+            <img class="image" id="posOfImg10" onclick="zoomImage(9)" src="../rsc/img/FristDay/Image10.jpg">
+
+        </div>
+    </section>
+    -->
+    
+    <script src="main.js"></script>
+      
+      
+    
+</body>
+</html>

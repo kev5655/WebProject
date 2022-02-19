@@ -1,0 +1,196 @@
+@font-face{
+  font-family: ubuntu;
+    src: url(../rsc/Fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-width: light;
+}
+
+:root{
+  --height-nav-bar: 100px;
+}
+
+body {
+    background-color: black; /*Himmel Balu rgba(113,163,226,255)*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+  position: relative;
+}
+
+#homeImg{
+  width: 100%;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0)) , to(rgb(250, 250, 250)));
+  /*-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.883));*/
+}
+
+.centerTop{
+  background-color: rgba(117, 37, 37, 0.5);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: var(--height-nav-bar);
+}
+
+#navigation{
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  list-style-type: none;
+  
+  /*margin-top: calc(var(--height-nav-bar) / 2);*/
+}
+
+li a{
+  padding: 0px 40px 0px 30px;
+  text-decoration: none;
+  
+}
+
+.link{
+  color: white;
+  font-family: ubuntu;
+  font-size: 22px;
+}
+
+.center{
+  background-color: rgba(55,55,55,0.5);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.bottomRight {
+  background-color: rgba(55, 55, 55, 0.924);
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.bottomLeft {
+  background-color: rgba(55, 55, 55, 0.924);
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+#titelText{
+  background-color:aliceblue;
+  font-family: ubuntu;
+  font-size: 40px;
+}
+
+.text{
+  color: white;
+  font-family: ubuntu;
+  font-size: 30px;
+}
+
+
+
+
+
+
+.container2{
+  position: relative;
+  background-color: grey;
+  margin-top: 500px;
+  z-index: -2;
+}
+
+.h2Center{
+  text-align: center;
+}
+
+h2{
+  color: white;
+  background-color: rgba(255, 235, 205, 0.5);
+  font-family: ubuntu;
+  font-size: 24px;
+}
+
+.containerImg{
+  --image-size: 50%;
+  position: absolute;
+  width: 100%;
+  background-color:rgba(177, 154, 61, 0.397);
+  /* Cennter Image*/
+}
+
+.routeImg{
+  position: relative;
+  width: var(--image-size);
+  left: calc((100% - var(--image-size)) / 2);
+  z-index: -1;
+}
+
+.pointArea{
+  position: absolute;
+  height: 100%;
+  width: var(--image-size);
+  left: calc((100% - var(--image-size)) / 2);
+  background-color: rgba(255, 0, 0, 0.219);
+  top: 0%;
+}
+
+.point{
+  --image-width: 2336;
+  --image-height: 1103;
+  --point-width: 1705;
+  --point-height: 975;
+  --circle-diameter: 50px;
+  --pointXDinamic: calc((var(--point-width) / var(--image-width)) * 100%);
+  --pointYDinamic: calc((var(--point-height) / var(--image-height)) * 100%);
+  --pointSubMiddelX: calc((var(--circle-diameter) * 100) / var(--image-width));
+  --pointSubMiddelY: calc((var(--circle-diameter) * 100) / var(--image-height));
+  --point-X-Origin: calc(var(--pointXDinamic) - var(--pointSubMiddelX));
+  --point-Y-Origin: calc(var(--pointYDinamic) - var(--pointSubMiddelY));
+  position: relative;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  boder-color: lightblue;
+  width: var(--circle-diameter);
+  height: var(--circle-diameter);
+  margin:0px;
+  /*top: var(--point-X-Origin);
+  left: var( --point-Y-Origin);*/
+  top: 20%;
+  left: 30%;
+  z-index: 1;
+}
+
+
+#part_3{
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
