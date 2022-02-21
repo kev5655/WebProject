@@ -1,55 +1,53 @@
-
 /*-----------------------------------------------------
 -------------------------Part_5-------------------------
 -------------------------------------------------------*/
 
 #part_5 {
     padding-top: 5%;
-  }
-  
-  #routeMapD3 {
+}
+
+#routeMapD3 {
     /* Mit Position Relativ kann gewährleistet werden, das sich 
     alle darin befindenden Element nicht größer alls das Element werden */
     position: relative;
     padding: 0;
     margin: 0;
-  }
-  
-  #footer{
+}
+
+#footer {
     margin: 3% 2% 4% 2%;
     /* Reiht die Element in ein Reihe */
     display: flex;
     /* Setzt ein Element nach recht ganz an den Rand zentriert das in der 
     Mitte und setz das Rechte Element ganz nach rechts */
     justify-content: space-between;
-  }
-  
-  #footer p{
+}
+
+#footer p {
     /* Zentriert die Texte in der Höhe der Box*/
     margin: auto 0 auto 0;
     /* Setzt die grösse für die Texte*/
     width: 20%;
-  }
-  
-  #footer #right{
+}
+
+#footer #right {
     /*Scheibt den Text nach rechts */
     text-align: right;
-  }
-  
-  #footerIconsWidth{
+}
+
+#footerIconsWidth {
     /* Setzt die grösse für die Icon-Box*/
     width: 50%;
-  }
-  
-  #footerIcons{
+}
+
+#footerIcons {
     /* Reiht die Element in ein Reihe */
     display: flex;
     /* Setzt um alle Element den gleichen Abstand */
-    justify-content: space-around; 
-  }
-  
-  #mailIcon{
+    justify-content: space-around;
+}
+
+#mailIcon {
     transform: scale(1.2) translateY(1px);
     /*transform: translateY(2px);*/
-  }
-  
+}

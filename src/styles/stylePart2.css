@@ -1,4 +1,3 @@
-
 /*-----------------------------------------------------
 -------------------------Part_2-------------------------
 -------------------------------------------------------*/
@@ -8,9 +7,9 @@
     alle darin befindenden Element nicht größer alls das Element werden */
     position: relative;
     padding: 5% 0 0 0;
-  }
-  
-  .layout_part_2 {
+}
+
+.layout_part_2 {
     /* Setz ein Grid-Panel fest so kann man besser auf 
     veränderende Display Größen reagieren. */
     display: grid;
@@ -19,57 +18,56 @@
     /* Setzt die Abstände nach oben 7 % nach rechts 4 % 
     nach unten kein Abstand und nach links 4 % */
     padding: 7% 4% 0% 4%;
-  }
-  
-  #description_part_2 {
+}
+
+#description_part_2 {
     /* Setz den Abstand für oben und unten und zentriert die Tabelle, 
     Paragraph und den Link zum PDF in die Mitte */
     margin: auto 4% auto 4%;
-  }
-  
-  table {
+}
+
+table {
     color: white;
     font-family: ubuntu;
     /* Zentriert die Tabelle in die Mitte und 
     setzt ein Abstand nach unten */
     margin: 0 auto 10% auto;
-  }
-  
-  thead th {
+}
+
+thead th {
     font-size: 1.1em;
     /* Setzt den Abstand auf 10 px */
     padding: 10px;
-  }
-  
-  tbody td {
+}
+
+tbody td {
     /* Setzt den Abstand auf 10 px */
     padding: 10px;
-  }
-  
-  thead th,
-  tbody td {
+}
+
+thead th,
+tbody td {
     /* Schiebt den Text nach links */
     text-align: left;
-  }
-  
-  
-  .justify {
+}
+
+
+.justify {
     /* Macht aus den Texten ein Block-Text */
     text-align: justify;
-  }
-  
-  #pdf_link {
+}
+
+#pdf_link {
     /* Zentriert den Link zum PDF in die Mitte und 
     setzt ein Abstand nach unten und oben von 10 % */
     margin: 10% auto 10% auto;
     /* Text wird in der Box zentriert */
     text-align: center;
-  }
-  
-  #googleMaps iframe {
+}
+
+#googleMaps iframe {
     margin-left: 2%;
     /* Setzt links ein Abstand von 2 % */
     width: 98%;
     height: 100%;
-  }
-  
+}

@@ -2,15 +2,15 @@
   -------------------------Part_4-------------------------
   -------------------------------------------------------*/
 
-  #part_4 {
+#part_4 {
     padding-top: 5%;
-  }
-  
-  #routeMapD2 {
+}
+
+#routeMapD2 {
     /* Mit Position Relativ kann gewährleistet werden, das sich 
     alle darin befindenden Element nicht größer alls das Element werden */
     position: relative;
     padding: 0;
     margin: 0;
-  
-  }
+
+}
