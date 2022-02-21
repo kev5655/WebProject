@@ -461,13 +461,21 @@ tbody td {
   justify-content: space-between;
   
 }
+#footerIconsWidth{
+  width: 50%;
+}
 
 #footerIcons{
+  display: flex;
   justify-content: space-around; 
 }
 
+#footerIcons #footerIconsWidth span{
+  /*padding: 0% 5% 0% 5%;*/
+}
+
 #footer p{
-  margin: 0;
+  margin: auto 0 auto 0;
 }
 
 
