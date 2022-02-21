@@ -242,14 +242,17 @@ nav ul a:hover,
   color: #9b9b9b;
 }
 
-#mail {
-  transform: scale(1.2);
-  margin-top: 20px;
+.mail {
+  /* transform achtet nicht auf andere Element mit scale wird die
+  grösse verändert mit translateY wird das Element nach unten geschoben  */
+  transform: scale(1.2) translateY(1px);
+  /*margin-top: 20px;*/
 }
 
 /* Vergrössert und wechsel die Farbe wen darübergefahren wird */
-#mail:hover {
-  transform: scale(1.25);
+.mail:hover {
+  /* verändert die grösse des Element und schiebt es nach unten */
+  transform: scale(1.25) translateY(1px);
   color: #9b9b9b;
 }
 
@@ -457,26 +460,43 @@ tbody td {
 
 #footer{
   margin: 3% 2% 4% 2%;
+  /* Reiht die Element in ein Reihe */
   display: flex;
+  /* Setzt ein Element nach recht ganz an den Rand zentriert das in der 
+  Mitte und setz das Rechte Element ganz nach rechts */
   justify-content: space-between;
-  
 }
+
+#footer p{
+  /* Zentriert die Texte in der Höhe der Box*/
+  margin: auto 0 auto 0;
+  /* Setzt die grösse für die Texte*/
+  width: 20%;
+}
+
+#footer #right{
+  /*Scheibt den Text nach rechts */
+  text-align: right;
+}
+
 #footerIconsWidth{
+  /* Setzt die grösse für die Icon-Box*/
   width: 50%;
 }
 
 #footerIcons{
+  /* Reiht die Element in ein Reihe */
   display: flex;
+  /* Setzt um alle Element den gleichen Abstand */
   justify-content: space-around; 
 }
 
-#footerIcons #footerIconsWidth span{
-  /*padding: 0% 5% 0% 5%;*/
+#mailIcon{
+  transform: scale(1.2) translateY(1px);
+  /*transform: translateY(2px);*/
 }
 
-#footer p{
-  margin: auto 0 auto 0;
-}
+
 
 
 @media only screen and (max-width: 1068px) {
