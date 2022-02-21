@@ -73,3 +73,21 @@
     margin: 0;
 
 }
+
+/* For Tablet */
+@media only screen and (max-width: 1068px) {
+    .text_pos {
+        /* Lässt den Text bis an den Bildrand reichen */
+        margin: 2% 2% 3% 2%;
+      }
+
+}
+/* For Smartphone */
+@media only screen and (max-width: 734px) {
+    .pin {
+        height: 2vmin;
+        width: 2vmin;
+        /* Verändert die Rahmen grösse */
+        border-width: 0.6vmin;
+      }
+}

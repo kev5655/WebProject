@@ -194,3 +194,15 @@ nav ul a:hover,
     left: 16px;
     /* Von links 16 px nach rechts */
 }
+
+/* For Smartphone */
+@media only screen and (max-width: 734px) {
+  /* Navigationsbar */
+  nav ul a,
+  #btnDropdown,
+  #dropdownContent a {
+    /* Verkleiner die Boxen der Navigationsbar */
+    padding: 10px;
+  }
+
+}

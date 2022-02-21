@@ -71,3 +71,34 @@ tbody td {
     width: 98%;
     height: 100%;
 }
+
+/* For Tablet */
+@media only screen and (max-width: 1068px) {
+
+  
+    .layout_part_2 {
+      /* Veränder das Grid auf eine Spalte */
+      grid-template-columns: 1fr;
+    }
+  
+    #googleMaps {
+      /* Höhe der Google Maps Karte wird erhöht */
+      height: 640px;
+    }
+}
+
+/* For Smartphone */
+@media only screen and (max-width: 734px) {
+    table {
+        /* Verändert die Schriftgröße */
+        font-size: 0.8em;
+      }
+    
+      thead th,
+      tbody td {
+        /* Verändert die Schriftgröße */
+        font-size: 0.9em;
+        /* Verändert die Tabellen-Abstände */
+        padding: 5px;
+      }
+}

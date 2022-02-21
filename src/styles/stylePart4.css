@@ -14,3 +14,12 @@
     margin: 0;
 
 }
+
+/* For Tablet */
+@media only screen and (max-width: 1068px) {
+    .text_pos {
+        /* Lässt den Text bis an den Bildrand reichen */
+        margin: 2% 2% 3% 2%;
+      }
+
+}
