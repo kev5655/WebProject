@@ -1,0 +1,78 @@
+
+
+/*-----------------------------------------------------
+-------------------------Part_3-------------------------
+-------------------------------------------------------*/
+
+#part_3 {
+    /* Mit Position Relativ kann gewährleistet werden, das sich 
+    alle darin befindenden Element nicht größer alls das Element werden */
+    position: relative;
+    /* Setzt den Abstand nach oben, ird auch verwendet für die richtige 
+    Positionierung beim anklicken der Links in der Navigationsbar */
+    padding-top: 5%;
+  }
+  
+  .text_pos {
+    /* Setzt ein Abstand von 2 % nach oben 22 % nach link 
+    und rechts und nach unten 3 % */
+    margin: 2% 22% 3% 22%;
+  }
+  
+  .routeImg {
+    width: 100%;
+  }
+  
+  .pin {
+    height: 1vmin;
+    width: 1vmin;
+    /* Blockiert den Punkt so das es nicht an 
+    das Bild angefügt werden kann, und darüber gefügt wird */
+    display: block;
+    border: 0.3vmin solid;
+    /* Setzt ein Rahmen um das Element */
+    border-color: rgba(15, 127, 192, 0.781);
+    border-radius: 50%;
+    /* Macht den Rahmen zu einem Kreis */
+    z-index: 999;
+    /* Setzt die Position über das Bild */
+    position: absolute;
+    /* Verhinder das Anfügen an dem Bild */
+    /* Verschiebt die Koordinate es Punktes, so das die Koordinate, 
+    an dem der Punkt definiert ist, auf die Mitte des Kreises */
+    transform: translate(-50%, -50%);
+  }
+  
+  .pin:hover {
+    /* Setzt die Farbe des Rahmens */
+    border-color: rgb(70, 164, 218);
+    /* Setzt die Höhe des Punktes */
+    height: 1.5vh;
+    /* Setzt die Breite des Punktes */
+    width: 1.5vh;
+    /* Setzt die Dicke des Rahmens */
+    border-width: 0.35vh;
+    /* Setzt die Position über einen andern Kreis */
+    z-index: 1000;
+  }
+  
+  .image {
+    /*Animation in JavaScript*/
+    position: absolute;
+    width: 25%;
+    /* Blendet das Bild Standartmäßig aus */
+    display: none;
+    /* Verschiebt die Koordinate es Bildes, so das die Koordinate, 
+    an dem das Bild definiert ist, auf die Mitte des Bildes */
+    transform: translate(-50%, -50%);
+  }
+  
+  #routeMapD1 {
+    /* Mit Position Relativ kann gewährleistet werden, das sich 
+    alle darin befindenden Element nicht größer alls das Element werden */
+    position: relative;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
