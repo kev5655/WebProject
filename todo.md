@@ -5,13 +5,9 @@
 
 
 - blur effekte wen ein bild angecklckt wurde
-- grösse der punkt fixen
-- socal media links
 
-- Footer
 
 Moblie
-- Nav bahr schrifft gösse auf dem Handy
 - Title schrifft schrifftgrösse auf dem Handy
 - Schriftgrösse titlebild unten links
 - Tabelle gösse anpassen
