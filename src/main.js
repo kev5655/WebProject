@@ -44,7 +44,7 @@ window.onscroll = function() {
     // soll die Navigationsbar am oberen Bild Rand angezeigt werden
     if (prevScrollpos > currentScrollPos) {
         // Lässt die Navigatonsbar erscheine
-        document.getElementById("navbar").style.top = "0";
+        document.getElementById("navbar").style.top = "0px";
     }else{ 
         // Lässt die Navigatonsbar verschwinden
         document.getElementById("navbar").style.top = "-200px";

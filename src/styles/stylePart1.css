@@ -7,7 +7,8 @@
 
 #part_1 {
     /* Mit Position Relativ kann gewährleistet werden, das sich 
-    alle darin befindenden Element nicht größer alls das Element werden */
+    alle darin befindenden Element nicht größer alls das Element werden 
+    und die Elemente könne auf das Bild geschoben werden */
     position: relative;
 }
 
@@ -167,10 +168,9 @@ nav ul a:hover,
 }
 
 .mail {
-    /* transform achtet nicht auf andere Element mit scale wird die
+    /* transform achtet nicht auf andere Elemente mit scale wird die
     grösse verändert mit translateY wird das Element nach unten geschoben  */
     transform: scale(1.2) translateY(1px);
-    /*margin-top: 20px;*/
 }
 
 /* Vergrössert und wechsel die Farbe wen darübergefahren wird */

@@ -10,10 +10,10 @@
 }
 
 .layout_part_2 {
-    /* Setz ein Grid-Panel fest so kann man besser auf 
-    veränderende Display Größen reagieren. */
+    /* Setzt ein Grid-Panel fest so kann man besser auf 
+    verändernde Display Größen reagieren. */
     display: grid;
-    /* Erzeug zwei Spalten */
+    /* Erzeugt zwei Spalten */
     grid-template-columns: 1fr 1fr;
     /* Setzt die Abstände nach oben 7 % nach rechts 4 % 
     nach unten kein Abstand und nach links 4 % */
@@ -74,8 +74,6 @@ tbody td {
 
 /* For Tablet */
 @media only screen and (max-width: 1068px) {
-
-  
     .layout_part_2 {
       /* Veränder das Grid auf eine Spalte */
       grid-template-columns: 1fr;
@@ -92,13 +90,13 @@ tbody td {
     table {
         /* Verändert die Schriftgröße */
         font-size: 0.8em;
-      }
+    }
     
-      thead th,
-      tbody td {
+    thead th,
+    tbody td {
         /* Verändert die Schriftgröße */
         font-size: 0.9em;
         /* Verändert die Tabellen-Abstände */
         padding: 5px;
-      }
+    }
 }
