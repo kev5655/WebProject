@@ -38,12 +38,14 @@ nav {
 }
 
 nav ul {
-    display: flex;
     /* Das Display: flex ordnet alles nacheinander an */
-    justify-content: center;
+    display: flex;
+    /* Entfernt die Listen Punkte */
+    list-style-type: none;
     /* Zentriert die Boxen in der Mitte */
-    align-items: center;
+    justify-content: center;
     /* Zentriert die Elemente in die Mitte */
+    align-items: center;
     padding: 0;
     margin: 0;
 }
