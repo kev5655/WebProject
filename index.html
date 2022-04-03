@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./src/styles/stylePart4.css">
     <link rel="stylesheet" href="./src/styles/stylePart5.css">
     <link rel="stylesheet" href="./src/styles/routeImage.css">
+    <link rel="stylesheet" href="./src/styles/scrollbar.css">
+
     
     
     <!-- Google Fonts Icons-->
@@ -32,26 +34,28 @@
     <section id="part_1">
 
         <!-- Startseite Background Bild-->
-        <img id="homeImg" src="./rsc/img/homeImg.jpg" alt="Bild Home" width="1905" height=auto>
+        <img id="homeImg" src="./rsc/img/homeImg.jpg" alt="Bild Home" width="1905">
 
         <!-- Navigationsbar -->
         <nav id="navbar">
             <!-- id for Animation -->
             <ul>
-                <a id="borderRadLeft" href="#part_1">Home</a> <!-- Abgerundete Kanten Links -->
-                <a href="#part_2">Wander Route</a>
+                <li><a id="borderRadLeft" href="#part_1">Home</a></li> <!-- Abgerundete Kanten Links -->
+                <li><a href="#part_2">Wander Route</a></li>
 
-                <!-- Dorpdown Menu in der Navigationsbar -->
-                <div id="dropdown">
-                    <button id="btnDropdown">Tage
-                        <i class="fa fa-caret-down"></i> <!-- Icon Dreieck -->
-                    </button>
-                    <div id="dropdownContent">
-                        <a class="dropdownContentLinks" id="borderRadUpRight" href="#part_3">Erster Tag</a>
-                        <a class="dropdownContentLinks" href="#part_4">Zweiter Tag</a>
-                        <a class="dropdownContentLinks" id="borderRadDown" href="#part_5">Dritter Tag</a>
+                <!-- Dropdown Menu in der Navigationsbar -->
+                <li>
+                    <div id="dropdown">
+                        <button id="btnDropdown">Tage
+                            <i class="fa fa-caret-down"></i> <!-- Icon Dreieck -->
+                        </button>
+                        <div id="dropdownContent">
+                            <a class="dropdownContentLinks" id="borderRadUpRight" href="#part_3">Erster Tag</a>
+                            <a class="dropdownContentLinks" href="#part_4">Zweiter Tag</a>
+                            <a class="dropdownContentLinks" id="borderRadDown" href="#part_5">Dritter Tag</a>
+                        </div>
                     </div>
-                </div>
+                </li>
 
                 <!-- <a href="#part_6">Leistung</a>
                 <a href="#part_7">Unterkünfte</a>
@@ -72,7 +76,7 @@
             <a href="src/mail.php"><i class="material-icons mail"> alternate_email </i></a>
         </div>
 
-        <!-- Beschrifftung unten Links -->
+        <!-- Beschriftung unten Links -->
         <div id="bottomLeft">
             <p>Schweiz, Berner Oberland</p>
         </div>
@@ -113,7 +117,7 @@
                             <td>3 Tag</td>
                             <td>Iffigenalp</td>
                             <td>--></td>
-                            <td>Lauenensee</td>
+                            <td>Louenensee</td>
                         </tr>
                     </tbody>
                 </table>
@@ -126,18 +130,18 @@
                     nach der Fahrt mit der Gondelbahn in Kandersteg,
                     von da aus beginnt die erste Etappe auf die
                     Engstligenalp. Die zweite Etappe startet von der
-                    Egnstligenalp aus und findet sein Ende in der
+                    Engstligenalp aus und findet sein Ende in der
                     Iffigenalp. Die letzte Etappe führt zum Louenensee.
 
                 </p>
                 <!-- Eingebundenes PDF-->
                 <p id="pdf_link">
-                    <a href="./rsc/pdf/WanderRoute.pdf"> Hier</a> findest du die gesammte Wanderroute als Plan
+                    <a href="./rsc/pdf/WanderRoute.pdf"> Hier</a> findest du die gesamte Wanderroute als Plan
                 </p>.
 
             </div>
 
-            <!-- -->
+            <!-- Google maps wurde von https://www.checkpoll.de erstellt und hat im Hintergrund Werbung -->
             <div id="googleMaps">
                 <iframe
                     src=https://maps.google.de/maps?hl=de&q=Luftseilbahn+Kandersteg-Sunnbüel%20%20Innere+Dorfstrasse%20Kandersteg&t=&z=10&ie=utf8&iwloc=b&output=embed
@@ -230,10 +234,10 @@
             km werden 800 m abstieg bewältigt. Nach dem erfolgreichen
             Abstieg kommt man an den berühmten Ort: „bi de sibe Brünnen“
             vorbei. Bei den man die Wassermassen beobachten kann, die
-            direkt aus dem Felsen heraus fließt. Darauf folg der
+            direkt aus dem Felsen heraus fließt. Darauf folgt der
             Aufstiege auf die Langermatte dies ist der letzte Anstieg
             vom zweiten Tag. Der Aufstieg beträgt 400 m und ist nicht
-            schwierig. Darauf folg der Letzte abstieg zur Ifigenalp wo
+            schwierig. Darauf folgt der Letzte abstieg zur Iffigenalp wo
             die Unterkunft für die Übernachtung liegt.
         </p>
         <div id=routeMapD2>
@@ -251,32 +255,32 @@
             <div class="pin" id="point10D2" onmouseover="showImageD2(9)"></div>
 
             <img class="image" id="posOfImg1D2" onclick="zoomImageD2(0)" src=""
-                data-src="./rsc/img/SecondDay/Image1.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image1.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg2D2" onclick="zoomImageD2(1)" src=""
-                data-src="./rsc/img/SecondDay/Image2.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image2.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg3D2" onclick="zoomImageD2(2)" src=""
-                data-src="./rsc/img/SecondDay/Image3.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image3.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg4D2" onclick="zoomImageD2(3)" src=""
-                data-src="./rsc/img/SecondDay/Image4.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image4.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg5D2" onclick="zoomImageD2(4)" src=""
-                data-src="./rsc/img/SecondDay/Image5.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image5.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg6D2" onclick="zoomImageD2(5)" src=""
-                data-src="./rsc/img/SecondDay/Image6.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image6.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg7D2" onclick="zoomImageD2(6)" src=""
-                data-src="./rsc/img/SecondDay/Image7.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image7.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg8D2" onclick="zoomImageD2(7)" src=""
-                data-src="./rsc/img/SecondDay/Image8.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image8.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg9D2" onclick="zoomImageD2(8)" src=""
-                data-src="./rsc/img/SecondDay/Image9.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image9.jpg" alt="Bild auf der zweiten Route">
             <img class="image" id="posOfImg10D2" onclick="zoomImageD2(9)" src=""
-                data-src="./rsc/img/SecondDay/Image10.jpg" alt="Bild auf der zwieten Route">
+                data-src="./rsc/img/SecondDay/Image10.jpg" alt="Bild auf der zweiten Route">
 
         </div>
     </section>
 
     <!-- Dritter Tag -->
     <section id="part_5">
-        <h2>Iffigenalp - Lauenensee</h2>
+        <h2>Iffigenalp - Louenensee</h2>
         <h3>Beschreibung der Route</h3>
         <p class="justify text_pos">
             Die dritte und letzte Etappe führ von der Iffigenalp
@@ -287,7 +291,7 @@
             Nach dem Iffigsee kommen der letzte auf, steig der
             gesamten Wanderung auf den "Tugelpass" genießen sie noch
             die Aussicht den das ist der letzte Höhepunkt der Wanderung.
-            Danach folg ein langer Abstieg bis zum Lauenensee, wo die
+            Danach folgt ein langer Abstieg bis zum Louenensee, wo die
             dreitägige Wanderung endet.
         </p>
         <div id=routeMapD3>
@@ -331,15 +335,14 @@
             
             <p>Autor Kevin Zahn</p>
             <div id="footerIconsWidth">
-            <div id="footerIcons">
-                <span><a href="https://www.pinterest.de/"><i class="fab fa-pinterest icon"></i></a></span>
-                <span><a href="https://www.facebook.com/"><i class="fab fa-facebook icon"></i></a></span>
-                <span><a href="https://www.instagram.com/"><i class="fab fa-instagram icon"></i></a></span>
-                <span><a href="src/mail.php"><i class="material-icons mail" > alternate_email </i></a></span>
-            </div>
+                <div id="footerIcons">
+                    <span><a href="https://www.pinterest.de/"><i class="fab fa-pinterest icon"></i></a></span>
+                    <span><a href="https://www.facebook.com/"><i class="fab fa-facebook icon"></i></a></span>
+                    <span><a href="https://www.instagram.com/"><i class="fab fa-instagram icon"></i></a></span>
+                    <span><a href="src/mail.php"><i class="material-icons mail" > alternate_email </i></a></span>
+                </div>
             </div>
             <p id="right">21.02.2022</p>
-            
             
         </div>
     </section>
